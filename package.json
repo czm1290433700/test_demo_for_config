@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "tsc && jest"
+    "test": "jest"
   },
   "dependencies": {
     "@jest/types": "^29.1.2",
