@@ -13,4 +13,6 @@ export default {
   moduleNameMapper: {
     "\\.(css|less)$": "identity-obj-proxy",
   },
+  setupFiles: ["<rootDir>/enzyme_setup.js"],
+  setupFilesAfterEnv: ["<rootDir>/node_modules/jest-enzyme/lib/index.js"],
 };
