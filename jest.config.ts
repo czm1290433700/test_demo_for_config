@@ -6,4 +6,12 @@
 export default {
   clearMocks: true,
   testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/jest-dom-setup.js"],
+  transform: {
+    "^.+\\.(js|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.svg$": "<rootDir>/svg-transform.js",
+  },
+  moduleNameMapper: {
+    "\\.(css|less)$": "identity-obj-proxy",
+  },
 };
